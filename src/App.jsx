@@ -37,7 +37,7 @@ function App() {
         setContent(<All data={data} setData={setData} />);
       }
     }
-  }, [data, activeTab]); // data değiştiğinde bu useEffect tetiklenir
+  }, [data, activeTab]);
 
   return (
     <>
@@ -160,10 +160,9 @@ function InProgress({ data, setData }) {
                     );
                     setTimeout(() => {
                       setData({ ...data, todos: updateTodos });
-                    }, 500);
+                    }, 300);
                   }}
                   type="checkbox"
-                  //id={d.id}
                 />
               </label>
             </div>
@@ -177,7 +176,6 @@ function InProgress({ data, setData }) {
                   const updateTodos = data.todos.filter(
                     (todo) => todo.id !== d.id
                   );
-
                   setData({ ...data, todos: updateTodos });
                 }}
               >
@@ -203,17 +201,20 @@ function Complated({ data, setData }) {
               <label>
                 <input
                   onChange={(e) => {
+                    e.target.checked = false;
+
                     const updateTodos = data.todos.map((todo) =>
                       todo.id === d.id
                         ? { ...todo, isCompleted: !todo.isCompleted }
                         : todo
                     );
+                    
                     setTimeout(() => {
                       setData({ ...data, todos: updateTodos });
-                    }, 500);
+                    }, 300);
                   }}
                   type="checkbox"
-                  //checked={true}
+                  defaultChecked={d.isCompleted}
                 />
               </label>
             </div>
@@ -227,7 +228,6 @@ function Complated({ data, setData }) {
                   const updateTodos = data.todos.filter(
                     (todo) => todo.id !== d.id
                   );
-
                   setData({ ...data, todos: updateTodos });
                 }}
               >
@@ -258,12 +258,10 @@ function All({ data, setData }) {
                         ? { ...todo, isCompleted: !todo.isCompleted }
                         : todo
                     );
-                    setTimeout(() => {
-                      setData({ ...data, todos: updateTodos });
-                    }, 500);
+                    setData({ ...data, todos: updateTodos });
                   }}
                   type="checkbox"
-                  //id={d.id}
+                  checked={d.isCompleted}
                 />
               </label>
             </div>
