@@ -1,0 +1,74 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Daily Exercise",
+      "description": "Start the day with 15 minutes of stretching to improve flexibility, followed by a 30-minute walk to stay active and boost energy levels.",
+      "date": "20 feb, 2025",
+      "isCompleted": false
+    },
+    {
+      "id": 2,
+      "title": "Read a Book",
+      "description": "Pick up a book of your choice and read at least 20 pages. Try to focus on understanding the main concepts and take notes if necessary.",
+      "date": "18 feb, 2025",
+      "isCompleted": false
+    },
+    {
+      "id": 3,
+      "title": "Project Development",
+      "description": "Work on enhancing the project by adding new UI components and improving the existing user interface to provide a better user experience.",
+      "date": "15 feb, 2025",
+      "isCompleted": false
+    },
+    {
+      "id": 4,
+      "title": "Check Emails",
+      "description": "Go through your inbox and respond to important emails. Delete spam or unnecessary emails to keep your inbox organized and efficient.",
+      "date": "14 feb, 2025",
+      "isCompleted": true
+    },
+    {
+      "id": 5,
+      "title": "Research New Technologies",
+      "description": "Explore the latest trends in software development, including new frameworks, libraries, and best practices that can improve your coding efficiency and project quality.",
+      "date": "12 feb, 2025",
+      "isCompleted": false
+    },
+    {
+      "id": 6,
+      "title": "Prepare Shopping List",
+      "description": "Check the fridge and pantry to identify missing grocery items. Create a shopping list with essential food and household supplies to avoid unnecessary purchases.",
+      "date": "12 feb, 2025",
+      "isCompleted": false
+    },
+    {
+      "id": 7,
+      "title": "Code Review",
+      "description": "Review the latest code commits in the repository. Look for possible improvements, refactor inefficient parts, and ensure that the code follows best practices.",
+      "date": "10 feb, 2025",
+      "isCompleted": false
+    },
+    {
+      "id": 8,
+      "title": "Prepare Presentation",
+      "description": "Create slides for the upcoming meeting. Make sure the content is clear, well-structured, and visually appealing to effectively communicate key points.",
+      "date": "8 feb, 2025",
+      "isCompleted": true
+    },
+    {
+      "id": 9,
+      "title": "Study a New Topic",
+      "description": "Dedicate at least an hour to learning a new programming language or framework. Read documentation, watch tutorials, and try implementing a small project.",
+      "date": "4 feb, 2025",
+      "isCompleted": true
+    },
+    {
+      "id": 10,
+      "title": "Take a Break",
+      "description": "Step away from your screen and rest your eyes for at least 10 minutes. Stretch your body, take deep breaths, and refresh your mind before continuing work.",
+      "date": "1 feb, 2025",
+      "isCompleted": false
+    }
+  ]
+}
