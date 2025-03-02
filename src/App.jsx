@@ -137,7 +137,6 @@ function Header({
         </div>
       </div>
       {content && content}
-      {/*content içeriği null ise herhangi bir içerik sayfa değişse dahi gelmez bu is kontrolü ile yani content varsa işlemi yap*/}
     </>
   );
 }
@@ -147,7 +146,7 @@ function InProgress({ data, setData }) {
 
   return (
     <>
-      <div className="in-progress">
+      <div className="container">
         {inProgress.map((d) => (
           <div className="card" key={d.id}>
             <div className="checkbox-container">
@@ -164,13 +163,13 @@ function InProgress({ data, setData }) {
                     }, 500);
                   }}
                   type="checkbox"
-                  id={d.id}
+                  //id={d.id}
                 />
               </label>
             </div>
             <div className="content-container">
               <div className="content">
-                <h4 className="content-header">{d.title}</h4>
+                <h4 className="content-title">{d.title}</h4>
                 <span>{d.date}</span>
               </div>
               <button
@@ -197,7 +196,7 @@ function Complated({ data, setData }) {
 
   return (
     <>
-      <div className="in-progress">
+      <div className="container">
         {complated.map((d) => (
           <div className="card" key={d.id}>
             <div className="checkbox-container">
@@ -214,13 +213,13 @@ function Complated({ data, setData }) {
                     }, 500);
                   }}
                   type="checkbox"
-                  id={d.id}
+                  //checked={true}
                 />
               </label>
             </div>
             <div className="content-container">
               <div className="content">
-                <h4 className="content-header">{d.title}</h4>
+                <h4 className="content-title">{d.title}</h4>
                 <span>{d.date}</span>
               </div>
               <button
@@ -247,7 +246,7 @@ function All({ data, setData }) {
 
   return (
     <>
-      <div className="in-progress">
+      <div className="container">
         {all.map((d) => (
           <div className="card" key={d.id}>
             <div className="checkbox-container">
@@ -264,13 +263,13 @@ function All({ data, setData }) {
                     }, 500);
                   }}
                   type="checkbox"
-                  id={d.id}
+                  //id={d.id}
                 />
               </label>
             </div>
             <div className="content-container">
               <div className="content">
-                <h4 className="content-header">{d.title}</h4>
+                <h4 className="content-title">{d.title}</h4>
                 <span>{d.date}</span>
               </div>
               <button
