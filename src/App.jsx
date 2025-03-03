@@ -41,7 +41,7 @@ function App() {
 
   return (
     <>
-      <Header
+      <Main
         data={data}
         setData={setData}
         content={content}
@@ -53,14 +53,7 @@ function App() {
   );
 }
 
-function Header({
-  data,
-  content,
-  setContent,
-  setData,
-  activeTab,
-  setActiveTab,
-}) {
+function Main({ data, content, setContent, setData, activeTab, setActiveTab }) {
   return (
     <>
       <div className="header">
@@ -208,7 +201,7 @@ function Complated({ data, setData }) {
                         ? { ...todo, isCompleted: !todo.isCompleted }
                         : todo
                     );
-                    
+
                     setTimeout(() => {
                       setData({ ...data, todos: updateTodos });
                     }, 300);
@@ -220,7 +213,9 @@ function Complated({ data, setData }) {
             </div>
             <div className="content-container">
               <div className="content">
-                <h4 className="content-title">{d.title}</h4>
+                <h4 className={"content-title " + (d.isCompleted && "complated-title")} >
+                  {d.title}
+                </h4>
                 <span>{d.date}</span>
               </div>
               <button
@@ -267,7 +262,7 @@ function All({ data, setData }) {
             </div>
             <div className="content-container">
               <div className="content">
-                <h4 className="content-title">{d.title}</h4>
+                <h4 className={"content-title " + (d.isCompleted && "complated-title")} >{d.title}</h4>
                 <span>{d.date}</span>
               </div>
               <button

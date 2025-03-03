@@ -143,6 +143,11 @@
           background-color: #f3ebf7;
         }
       }
+
+      .complated-title{
+        text-decoration: line-through;
+        color: #888888;
+      }
     }
 
 
