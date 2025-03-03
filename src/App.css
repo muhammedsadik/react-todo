@@ -150,7 +150,31 @@
       }
     }
 
+  }
+}
 
+.add-button-container{
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  padding: 7.5px 16px 2.5px 20.55px;
+  background-color: #5C1F7A;
+  border-radius: 5px;
+  cursor: pointer;
 
+  .vertical-bar{
+    display: inline-block;
+    width: 5px;
+    height: 30px;
+    background-color: #FFF;
+    transform: translate(0px, 0px);
+  }
+
+  .horizontal-bar{
+    display: inline-block;
+    width: 5px;
+    height: 30px;
+    background-color: #FFF;
+    transform: translate(-5px, 0px)  rotate(90deg);
   }
 }

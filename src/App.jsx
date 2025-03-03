@@ -56,6 +56,11 @@ function App() {
 function Main({ data, content, setContent, setData, activeTab, setActiveTab }) {
   return (
     <>
+      <div className="add-button-container">
+        <span className="vertical-bar"></span>
+        <span className="horizontal-bar"></span>
+      </div>
+
       <div className="header">
         <div className="header-top">
           <img src={userLogo} className="logo" alt="React logo" />
