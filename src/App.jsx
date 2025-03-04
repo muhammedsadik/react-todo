@@ -61,7 +61,20 @@ function Main({ data, content, setContent, setData, activeTab, setActiveTab }) {
         <span className="horizontal-bar"></span>
       </div>
 
-      <div className="header">
+      <div className="modal-content">
+        <i class="fa-solid fa-arrow-left"></i>
+        <h3>Add new task</h3>
+
+        <label htmlFor=""></label>
+        <input type="text" />
+
+        <label htmlFor=""></label>
+        <input type="text" />
+
+        <button>Save Task!</button>
+      </div>
+
+      {/* <div className="header">
         <div className="header-top">
           <img src={userLogo} className="logo" alt="React logo" />
 
@@ -134,7 +147,7 @@ function Main({ data, content, setContent, setData, activeTab, setActiveTab }) {
           </div>
         </div>
       </div>
-      {content && content}
+      {content && content} */}
     </>
   );
 }
@@ -218,7 +231,11 @@ function Complated({ data, setData }) {
             </div>
             <div className="content-container">
               <div className="content">
-                <h4 className={"content-title " + (d.isCompleted && "complated-title")} >
+                <h4
+                  className={
+                    "content-title " + (d.isCompleted && "complated-title")
+                  }
+                >
                   {d.title}
                 </h4>
                 <span>{d.date}</span>
@@ -267,7 +284,13 @@ function All({ data, setData }) {
             </div>
             <div className="content-container">
               <div className="content">
-                <h4 className={"content-title " + (d.isCompleted && "complated-title")} >{d.title}</h4>
+                <h4
+                  className={
+                    "content-title " + (d.isCompleted && "complated-title")
+                  }
+                >
+                  {d.title}
+                </h4>
                 <span>{d.date}</span>
               </div>
               <button
